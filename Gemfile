@@ -6,6 +6,9 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'activeadmin'
+gem 'gravtastic'
+gem 'bootstrap_helper'
 
 
 # Gems used only for assets and not required
@@ -16,6 +19,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
+  gem 'bootstrap-sass', '~> 2.2.1'
 
   gem 'uglifier', '>= 1.0.3'
 end
