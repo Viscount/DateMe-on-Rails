@@ -34,6 +34,16 @@ DateMe::Application.routes.draw do
   #     resources :comments, :sales
   #     resource :seller
   #   end
+  resources :events
+  
+  resources :users do
+    resources :events do
+      resources :invitations do
+        resources :replies
+      end
+    end
+  end
+
 
   # Sample resource route with more complex sub-resources
   #   resources :products do
